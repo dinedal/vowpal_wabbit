@@ -87,4 +87,4 @@ demo/ocr/run.*
 !**/packages/repositories.config
 
 # JS
-./nodejs/node_modules/**
+nodejs/node_modules/**
