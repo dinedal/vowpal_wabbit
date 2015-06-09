@@ -1,0 +1,13 @@
+{
+  "name":"vowpal-wabbit",
+  "version":"0.0.1",
+  "scripts": {
+    "test": "nodeunit test.js"
+  },
+  "dependencies": {
+    "node-gyp": ">=2.0.1"
+  },
+  "devDependencies": {
+    "nodeunit": ">=0.9.1"
+  }
+}

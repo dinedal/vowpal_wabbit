@@ -62,6 +62,7 @@ test/RunTests.last.times
 **/dll
 **/ipch
 **/target
+**/build
 
 # VS files
 *.opensdf
@@ -84,3 +85,6 @@ demo/ocr/run.*
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 !**/packages/repositories.config
+
+# JS
+./nodejs/node_modules
