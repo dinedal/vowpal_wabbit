@@ -10,6 +10,7 @@
 #include "../vowpalwabbit/gd.h"
 #include "../vowpalwabbit/parser.h"
 
+#include "vw_instance.h"
 
 using namespace v8;
 
@@ -22,12 +23,12 @@ void Method(const FunctionCallbackInfo<Value>& args) {
 void InitVW(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = Isolate::GetCurrent();
   HandleScope scope(isolate);
-
-  VW::initialize("");
-  args.GetReturnValue().Set(True(isolate));
+  VWInstance::NewInstance(args);
 }
 
+
 void init(Handle<Object> exports) {
+  VWInstance::Init();
   NODE_SET_METHOD(exports, "vowpal_wabbit", Method);
   NODE_SET_METHOD(exports, "init", InitVW);
 }

@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "vowpal-wabbit",
-      "sources": [ "vowpal-wabbit.cc" ],
+      "sources": [ "vowpal-wabbit.cc", "vw_instance.cc" ],
       "include_dirs": [
         "/usr/local/include",
         "../vowpalwabbit"
